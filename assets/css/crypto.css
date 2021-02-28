@@ -1,0 +1,34 @@
+/* Тело страницы */
+.body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(10vh, max-content) 1fr;
+    grid-template-areas:
+        "header"
+        "main";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 20vw 1fr 10vw;
+    justify-items: start;
+}
+
+ul.menu_list li {
+    display: inline;
+    list-style-type: none;
+}
+
+a.menu-link {
+    text-decoration: none;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    background-color: #F3F5F9;
+}
